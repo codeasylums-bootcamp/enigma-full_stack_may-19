@@ -9,17 +9,9 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body style="  background: #76b852;
-/* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #76b852, #8DC26F);
-background: -moz-linear-gradient(to top, #76b852, #8DC26F);
-background: -o-linear-gradient(to top, #76b852, #8DC26F);
-background: linear-gradient(to top, #76b852, #8DC26F);
-background-size: cover;
-background-attachment: fixed;
-font-family: 'Roboto', sans-serif;">
+<body style="  background-image: url(pattern.png);">
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="consumer.html" >Home</a>
+    <a class="navbar-brand" href="consumer.html" ><img src="https://i.dlpng.com/static/png/2346823_thumb.png" height="40" width="40">@yourDoor</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,23 +22,36 @@ font-family: 'Roboto', sans-serif;">
           <a class="nav-link" onclick="status()">Order Status</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="signup.html" style="margin-left: 1800%">Logout</a>
+          <a class="nav-link" href="index.html" style="margin-left: 1700%">Logout</a>
         </li>
        
       </ul>
     </div>
   </nav>
+  <br><br>
   <div>
-    <h2> Place Your Order Here</h2>
+    <h2 style="color: azure"> Place Your Order Here</h2>
   </div>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      
+      
     <div id="order">
       <script>fn()</script>
+      </div>
     </div>
+  
+  </div>
+  <br>
+ <span style="color: aliceblue">Give Your Address :<input type="text" placeholder="Address" id="add" style="padding: 12px 20px;margin: 8px 0;box-sizing: border-box;"></span><br>
+ <span style="color: aliceblue">Give Your Contact :<input type="number" placeholder="Phone No." id="num" style="padding: 12px 20px; margin: 8px 0; box-sizing: border-box;"></span><br>
+  <input type="button" class="btn btn-secondary" value="Submit" onclick="confirm()" id="con">
+  <br>
+  <br>
+  <br>
     
-    <input type="text" placeholder="Address" id="add" style="padding: 12px 20px;margin: 8px 0;box-sizing: border-box;"><br>
-    <input type="number" placeholder="Phone No." id="num" style="padding: 12px 20px; margin: 8px 0; box-sizing: border-box;"><br>
-    <input type="button" value="Submit" onclick="confirm()" id="con">
-
+    
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

@@ -1,4 +1,5 @@
 
+
 function fun(){
 
     var rate_value;
@@ -22,7 +23,7 @@ function fun(){
     })
     .then((response)=>{
 
-        console.log(response);
+        console.log("stop");
     })
     .catch((error)=>{
 
@@ -37,7 +38,7 @@ function funt(){
         var usern=document.getElementById('usern').value;
     axios.get(`http://localhost:3001/users/${usern}`)
     .then((response)=>{
-        console.log(response)
+        console.log("stop")
         
         
         
@@ -49,6 +50,7 @@ function funt(){
             else {window.open('consumer.html')}
             
         }
+        else {alert("Invalid username or password")}
        
     })
 

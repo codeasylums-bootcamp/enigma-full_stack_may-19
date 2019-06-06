@@ -15,12 +15,12 @@ function sca(){
        { userna=response.data[i].username;
          document.getElementById('scard').innerHTML+=`
         
-       <div class="card " style="width: 18rem; ">
        
-       <div class="card-body">
+       <div style="border : 3px solid blue; border-radius: 10px; width:300px; background-color:#fff591;margin: 30px;display:inline-block">
+       <div class="card-body"  >
+       <img src="http://www.pngmart.com/files/3/Order-Now-PNG-Free-Download.png" class="card-img-top" alt="...">
          
-         
-        <input type="button" id="place${j}" value="${response.data[i].name}" onclick="order(this)" style="color:dark;" >
+        <input type="button" class="btn btn-primary" id="place${j}" value="${response.data[i].username}" onclick="order(this)" style="color:dark;" >
        </div>
      </div>
      <br><br>
@@ -58,7 +58,8 @@ axios.get(`http://localhost:3001/retailers`)
         
      
       for(let y=0;y<si;y++)
-      {
+      {  console.log(val)
+        console.log(response.data[y].username)
         if(val==response.data[y].username){
           localStorage.setItem("usn",response.data[y].username);
           window.open('placeorder.html')
@@ -93,10 +94,10 @@ function status(){
            x[i]=response.data[i]._id;
            if(response.data[i].funame==use) {
            
-          document.getElementById('scards').innerHTML=`<h2 style="text-align: center;color:blue">  Your Order Status</h2>
+          document.getElementById('scards').innerHTML=`<h1 style="text-align: center;color:white">  Your Order Status</h1>
           <div id="l${i}">
-          <li>Your order from ${response.data[i].rname} was: ${response.data[i].cf}</li>
-          <button  onclick="pass(${i})"  >OK</button>
+          <h3 style="color:white">Your order from ${response.data[i].rname} was: ${response.data[i].cf}
+          <button class="btn btn-secondary"  onclick="pass(${i})"  >OK</button></h3>
           </div>
           `
           document.getElementById('scard').innerHTML=``

@@ -48,11 +48,13 @@ router.post('/',function(req,res){
    .then(users=>{
        if(users.length>0){
            res.send("Account already exists").status(400);
+           
            console.log("no")
        }
        else {
            newuser.save();
            res.send("Account created").status(201);
+        
        }})})
 
            module.exports=router;

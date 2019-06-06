@@ -12,24 +12,26 @@ function order(){
             
             for(let u=0;u<siz;u++){
                 console.log(siz)
-               document.getElementById('order').innerHTML+=`<div class="d${i}">
-               <li><span>${response.data[i].order[u][0]} --></span>
-               <span> ${response.data[i].order[u][2]}</span>
-               </li>
-               </div>
-               `
-        
+               document.getElementById('order').innerHTML+=
+        `<div class="d${i}">
+                     <li><span>${response.data[i].order[u][0]} --></span>
+                        <span> ${response.data[i].order[u][2]}</span>
+                        </li>
+                        </div>`
        
      
             
         }}
-        document.getElementById('order').innerHTML+=`<div id="d1${i}">
+        document.getElementById('order').innerHTML+=`
+        
+        <div id="d1${i}">
         <li> Address: ${response.data[i].address}</li>
                <li> Phone No: ${response.data[i].phone}</li>
                <li> Name: ${response.data[i].fname}</li>       
-        <input type="button" id="app${i}"  name="${response.data[i].fname}" value="Approve Order" onclick="approve(${i})"> 
-        <input type="button" id="rej${i}" name="${response.data[i].fname}" value="Reject Order" onclick="reject(${i})">
-        </div>
+        <input type="button" class="btn btn-success" id="app${i}"  name="${response.data[i].fname}" value="Approve Order" onclick="approve(${i})"> 
+        <input type="button" class="btn btn-danger" id="rej${i}" name="${response.data[i].fname}" value="Reject Order" onclick="reject(${i})">
+        </div> 
+
         `
     
 
@@ -107,3 +109,9 @@ function del(orderID)
     })
 }
 
+
+
+// `
+//                `
+
+{/**/}

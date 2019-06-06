@@ -9,10 +9,10 @@
     <link href="retailer.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body style="background-color: #76b852">
+<body style="background-image: url(pattern.png)">
     <script src="retailer.js"></script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="retailer.html">Home</a>
+        <a class="navbar-brand" href="retailer.html"><img src="https://i.dlpng.com/static/png/2346823_thumb.png" height="40" width="40">@yourDoor</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,16 +25,16 @@
               <a class="nav-link" href="or.html">Orders</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="index.html" style="margin-left: 1550%">SignOut</a>
+                <a class="nav-link" href="index.html" style="margin-left: 1450%">SignOut</a>
               </li>
           </ul>
         </div>
       </nav>
       <br>
       
-      <h1 style="text-align: left; color: antiquewhite ">Enter your items here</h1>
-      <br>
-      <input type="text" placeholder="Item-Name" id="item">
+      <h2 style="margin-left:20px; padding:10px;font-family:cursive; color:white; text-shadow: 2px 2px 4px grey;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/List-Icon.svg/1024px-List-Icon.svg.png" style="width:50px; height:50px"> Add to your Menu</h2>
+      <h5 style="color:yellow;margin-left:20px; padding:10px;"> All Done when ready to serve </h5> <br>
+      <!-- <input type="text" placeholder="Item-Name" id="item">
       <input type="number" placeholder="Price" id="price"><br><br>
       <div id="retailer" class="listitem">
 
@@ -42,8 +42,13 @@
 
       <button type="button" class="btn  btn-secondary" onclick="add()">Add</button>
       <button type="button" class="btn btn-secondary" onclick="final()">Final Submission</button>
-      
-
+       -->
+       <input style="margin-left:30px; padding-left:5px" type="text" placeholder="Item-Name" id="item">
+      <input style="margin-left:20px; padding-left:5px" type="number" placeholder = "Price" id="price">
+      <button style="margin-left:10px" type="button" class="btn btn-secondary" onclick="add()">Add</button>
+      <button style="margin-left:6px" type="button" class="btn btn-secondary" onclick="final()">All Done!</button>
+      <div id="retailer"><br><br>
+        <h2 style="position: fixed; left: 0; font-family:cursive; bottom: 7px; width: 100%;  color: yellow; text-align: center;">happy Selling!!</h2>
 
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
